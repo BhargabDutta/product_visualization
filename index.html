@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Keyboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bodystyle.css">
+</head>
+<body>
+    <div class="mobile">
+        <h1>kindly visit our website on a desktop or laptop for a better experience</h1>
+    </div>
+    
+    <div class="main-cntr" style="position: relative; z-index: 10;">
+        <section class="section hero">
+            <div class="container">
+                <h1 style="-webkit-text-stroke: 0.5px grey; color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Revolutionary Product</h1>
+                <p style="color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Transform your life with our groundbreaking innovation</p>
+            </div>
+        </section>
+        <div class="between"></div>
+    
+        <section class="section feature-center">
+            <div class="container">
+                <h1 style="-webkit-text-stroke: 0.5px grey; color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 4rem;">Powerful Performance</h2>
+                <p style="color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Unleash unprecedented power with our cutting-edge technology. Handle complex tasks with ease and achieve more in less time.</p>
+            </div>
+        </section>
+        <div class="between"></div>
+
+        <div class="between"></div>
+
+        <!-- <div class="between"></div> -->
+        <div class="between-small"></div>
+
+
+
+        <section class="section feature-left">
+            <div class="content-box">
+                <h2>Seamless Integration</h2>
+                <p>Experience the perfect harmony of technology and design. Our product seamlessly integrates into your daily routine, making life easier and more efficient.</p>
+            </div>
+        </section>
+        <div class="between-small"></div>
+
+    
+        <section class="section feature-right">
+            <div class="content-box">
+                <h2>Elegant Design</h2>
+                <p>Beauty meets functionality in our meticulously crafted design. Every detail has been considered to create an exceptional user experience.</p>
+            </div>
+        </section>
+
+        <!-- <div class="between-small"></div> -->
+        <section class="section hero">
+            <div class="container">
+                <h1 style="-webkit-text-stroke: 0.5px grey; color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Revolutionary Product</h1>
+                <p style="color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Transform your life with our groundbreaking innovation</p>
+            </div>
+        </section>
+
+    </div>
+    <canvas id="image-sequence"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
+    <script>
+        const sections = document.querySelectorAll('.section');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+        // Function to resize the canvas to match the window size
+        function resizeCanvas() {
+    const canvas = document.getElementById('image-sequence');
+    canvas.width = window.innerWidth;  // Set internal resolution based on the window width
+    canvas.height = window.innerHeight; // Set internal resolution based on the window height
+    // Adjust the image scaling logic in your image sequence accordingly
+}
+
+
+  // Resize the canvas when the page loads
+  resizeCanvas();
+
+  // Resize the canvas dynamically when the window is resized
+  window.addEventListener('resize', resizeCanvas);
+    </script>
+</body>
+</html>

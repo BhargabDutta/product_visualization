@@ -1,0 +1,27 @@
+body {
+    height: 1050vh;
+    /* background: #000; */
+    background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 1) 100%);
+  }
+  /* #image-sequence {
+    will-change: transform;  
+  } */
+  
+  canvas {
+    /* border: 2px solid red; */
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 118vw;
+      max-height: 100vh;
+      object-fit:cover; 
+      z-index: 1; /* Make sure it's behind the content */
+      display: block;
+    }
+   
+  @media only screen and (max-width:480px){
+    canvas{
+      display: none;
+    }
+  }
