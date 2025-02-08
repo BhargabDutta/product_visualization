@@ -1,75 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Keyboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bodystyle.css">
+    <link rel="stylesheet" href="particle.css">
 </head>
+
 <body>
-    <div class="mobile">
+    <!-- <div class="mobile">
         <h1>kindly visit our website on a desktop or laptop for a better experience</h1>
-    </div>
-    
+    </div> -->
+    <div class="bg-animation">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+        <div id='stars4'></div>
+    </div><!-- / STAR ANIMATION -->
+
+
     <div class="main-cntr" style="position: relative; z-index: 10;">
         <section class="section hero">
             <div class="container">
-                <h1 style="-webkit-text-stroke: 0.5px grey; color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Revolutionary Product</h1>
-                <p style="color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Transform your life with our groundbreaking innovation</p>
+                <h1
+                    style="-webkit-text-stroke: 0.5px grey; color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Revolutionary Product</h1>
+                <p
+                    style="color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Transform your life with our groundbreaking innovation</p>
             </div>
         </section>
-        <div class="between"></div>
-    
+        <div>
+            <section class="section" style="display: flex; justify-content: space-between; width: 100%;">
+                <div class="content-box" style="margin-left: 2rem;  width:400px; text-align: left;">
+                    <h2 style="font-size: 1.5rem;">Innovative Solutions</h2>
+                    <p style="font-weight: 1rem;">Our cutting-edge technology provides smart solutions for modern
+                        challenges. Experience the next generation of innovation with our advanced features and
+                        capabilities.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ea corporis voluptatem praesentium,
+                        placeat itaque ullam tenetur, voluptas omnis facere sequi saepe, dignissimos iusto officiis
+                        error? Eligendi eius quidem nobis optio accusantium dolorem consequuntur, enim est aliquid
+                        perferendis magnam ducimus cumque voluptatem, sunt ullam voluptates reprehenderit molestias
+                        itaque maiores dolorum nisi in consectetur nesciunt modi? Voluptatibus ipsa neque consequuntur
+                        corrupti cupiditate veritatis eius distinctio cum! Unde, quam! Praesentium, harum alias!</p>
+                </div>
+                <div class="content-box" style="margin-right: 2rem; width:400px;  text-align: left;">
+                    <h2 style="font-size: 1.5rem;">Superior Quality</h2>
+                    <p style="font-weight: 1rem;">Built with precision and care, our products maintain the highest
+                        standards of quality. Every component is thoroughly tested to ensure reliable performance.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ea corporis voluptatem praesentium,
+                        placeat itaque ullam tenetur, voluptas omnis facere sequi saepe, dignissimos iusto officiis
+                        error? Eligendi eius quidem nobis optio accusantium dolorem consequuntur, enim est aliquid
+                        perferendis magnam ducimus cumque voluptatem, sunt ullam voluptates reprehenderit molestias
+                        itaque maiores dolorum nisi in consectetur nesciunt modi? Voluptatibus ipsa neque consequuntur
+                        corrupti cupiditate veritatis eius distinctio cum! Unde, quam! Praesentium, harum alias!</p>
+                </div>
+            </section>
+        </div>
+
         <section class="section feature-center">
             <div class="container">
-                <h1 style="-webkit-text-stroke: 0.5px grey; color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 4rem;">Powerful Performance</h2>
-                <p style="color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Unleash unprecedented power with our cutting-edge technology. Handle complex tasks with ease and achieve more in less time.</p>
+                <h1
+                    style="-webkit-text-stroke: 0.5px grey; color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 4rem;">
+                    Powerful Performance</h2>
+                    <p
+                        style="color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                        Unleash unprecedented power with our cutting-edge technology. Handle complex tasks with ease and
+                        achieve more in less time.</p>
             </div>
         </section>
-        <div class="between"></div>
+        <!-- <div class="between"></div>
 
-        <div class="between"></div>
+        <div class="between"></div> -->
+        <section class="section" style="display: flex; flex-direction: column; gap: 2rem; width: 100%;">
+            <div style="display: flex; justify-content: flex-start; width: 100%; ">
+                <div class="content-box" style="margin-left: 2rem; width: 400px; text-align: left;">
+                    <h2 style="font-size: 1.5rem;">Smart Technology</h2>
+                    <p style="font-weight: 1rem;">Powered by advanced AI algorithms, our product learns and adapts to
+                        your preferences. Experience personalized solutions that evolve with your needs.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quod deserunt repellendus
+                        dolor sit amet consectetur adipisicing elit. Nam ea corporis voluptatem praesentium, placeat
+                        itaque ullam tenetur.</p>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: flex-end; width: 100%; ">
+                <div class="content-box" style="margin-right: 2rem; width: 400px; text-align: left;">
+                    <h2 style="font-size: 1.5rem;">Sustainable Design</h2>
+                    <p style="font-weight: 1rem;">Built with eco-friendly materials and energy-efficient components, our
+                        product helps reduce environmental impact while maintaining peak performance.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quod deserunt repellendus
+                        dolor sit amet consectetur adipisicing elit. Nam ea corporis voluptatem praesentium, placeat
+                        itaque ullam tenetur.</p>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: flex-start; width: 100%; ">
+                <div class="content-box" style="margin-left: 2rem; width: 400px; text-align: left;">
+                    <h2 style="font-size: 1.5rem;">Future-Ready</h2>
+                    <p style="font-weight: 1rem;">Stay ahead of the curve with regular updates and expandable features.
+                        Our product is designed to grow with emerging technologies and future innovations.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quod deserunt repellendus
+                        dolor sit amet consectetur adipisicing elit. Nam ea corporis voluptatem praesentium, placeat
+                        itaque ullam tenetur.</p>
+                </div>
+            </div>
+        </section>
 
         <!-- <div class="between"></div> -->
-        <div class="between-small"></div>
-
-
-
-        <section class="section feature-left">
-            <div class="content-box">
-                <h2>Seamless Integration</h2>
-                <p>Experience the perfect harmony of technology and design. Our product seamlessly integrates into your daily routine, making life easier and more efficient.</p>
-            </div>
-        </section>
-        <div class="between-small"></div>
+        <!-- <div class="between-small"> -->
 
     
-        <section class="section feature-right">
-            <div class="content-box">
-                <h2>Elegant Design</h2>
-                <p>Beauty meets functionality in our meticulously crafted design. Every detail has been considered to create an exceptional user experience.</p>
-            </div>
-        </section>
 
-        <!-- <div class="between-small"></div> -->
-        <section class="section hero">
-            <div class="container">
-                <h1 style="-webkit-text-stroke: 0.5px grey; color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Revolutionary Product</h1>
-                <p style="color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Transform your life with our groundbreaking innovation</p>
-            </div>
-        </section>
+
+
+    <section class="section feature-left">
+        <div class="content-box">
+            <h2>Seamless Integration</h2>
+            <p>Experience the perfect harmony of technology and design. Our product seamlessly integrates into your
+                daily routine, making life easier and more efficient.</p>
+        </div>
+    </section>
+    <div class="between-small"></div>
+
+
+    <section class="section feature-right">
+        <div class="content-box">
+            <h2>Elegant Design</h2>
+            <p>Beauty meets functionality in our meticulously crafted design. Every detail has been considered to create
+                an exceptional user experience.</p>
+        </div>
+    </section>
+
+    <!-- <div class="between-small"></div> -->
+    <section class="section hero">
+        <div class="container">
+            <h1
+                style="-webkit-text-stroke: 0.5px grey; color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                Revolutionary Product</h1>
+            <p
+                style="color: black; background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                Transform your life with our groundbreaking innovation</p>
+        </div>
+    </section>
 
     </div>
     <canvas id="image-sequence"></canvas>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
     <!-- <script src="script.js"></script> -->
     <script src="script.js"></script>
     <script>
         const sections = document.querySelectorAll('.section');
-        
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -85,18 +172,19 @@
         });
         // Function to resize the canvas to match the window size
         function resizeCanvas() {
-    const canvas = document.getElementById('image-sequence');
-    canvas.width = window.innerWidth;  // Set internal resolution based on the window width
-    canvas.height = window.innerHeight; // Set internal resolution based on the window height
-    // Adjust the image scaling logic in your image sequence accordingly
-}
+            const canvas = document.getElementById('image-sequence');
+            canvas.width = window.innerWidth;  // Set internal resolution based on the window width
+            canvas.height = window.innerHeight; // Set internal resolution based on the window height
+            // Adjust the image scaling logic in your image sequence accordingly
+        }
 
 
-  // Resize the canvas when the page loads
-  resizeCanvas();
+        // Resize the canvas when the page loads
+        resizeCanvas();
 
-  // Resize the canvas dynamically when the window is resized
-  window.addEventListener('resize', resizeCanvas);
+        // Resize the canvas dynamically when the window is resized
+        window.addEventListener('resize', resizeCanvas);
     </script>
 </body>
+
 </html>

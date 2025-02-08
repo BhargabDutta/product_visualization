@@ -1,8 +1,24 @@
 body {
     height: 1050vh;
-    /* background: #000; */
-    background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 1) 100%);
-  }
+    background: #1a0000;
+    background-image: 
+        radial-gradient(circle at 30% 30%, rgba(255, 50, 50, 0.4) 0%, transparent 35%),
+        radial-gradient(circle at 70% 60%, rgba(255, 50, 50, 0.3) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(50, 0, 0, 0.95) 45%, rgba(20, 0, 0, 1) 100%);
+    animation: spotlightMove 15s infinite alternate;
+}
+
+@keyframes spotlightMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
   /* #image-sequence {
     will-change: transform;  
   } */
@@ -20,8 +36,8 @@ body {
       display: block;
     }
    
-  @media only screen and (max-width:480px){
+  /* @media only screen and (max-width:480px){
     canvas{
       display: none;
     }
-  }
+  } */
